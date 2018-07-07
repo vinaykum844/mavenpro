@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="logintestone">
+<test name="logintestone">
+<classes>
+<class name="com.hybridframework.homepage.TestDataDriverScript">
+</class>
+</classes>
+</test>
+</suite>
