@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng">
+<test name="testng">
+<classes>
+<class name="testng.AllAnnotations">
+</class>
+</classes>
+</test>
+
+<test name="grouptest">
+<groups>
+<run>
+<include name="sanity"></include>
+<include name="smoke"></include>
+</run>
+</groups>
+<classes>
+<class name="testng.GroupTest">
+</class>
+</classes>
+</test>
+
+<test name="Dependancy">
+<classes>
+<class name="testng.DependsOnTest">
+</class>
+</classes>
+</test>
+
+<parameter name="userName" value="userName123"></parameter>
+<parameter name="password" value="password123"></parameter>
+<test name="parameterTest">
+<classes>
+<class name="testng.ParametersInTestNg"></class>
+</classes>
+</test>
+
+<test name="DataProviderTest">
+<classes>
+<class name="testNG.DataProviderTest"></class>
+</classes>
+</test>
+
+
+<test name="EnableAndDisableTest">
+<classes>
+<class name="testNG.EnableAndDisableTest"></class>
+</classes>
+</test>
+
+
+
+</suite>

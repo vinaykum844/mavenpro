@@ -1,0 +1,24 @@
+facebook.com
+
+Birthday
+Day
+Month
+Year
+
+Xpath of Day-//select[@id='day']
+following-siblings
+Month-$x("//select[@id='day']/following-sibling::select[1]")
+Year-$x("//select[@id='day']/following-sibling::select[2]")
+To select all the siblings
+$x("//select[@id='day']/following-sibling::*")
+
+Preceding siblings
+Day-$x("//select[@id='year']/preceding-sibling::select[2]")
+Month-$x("//select[@id='year']/preceding-sibling::select[1]")
+
+
+Parent and child sibling
+firstname-$x("//div[@id='reg_form_box']/child::div[1]/descendant::div[3]")
+lastname-$x("//div[@id='reg_form_box']/child::div[1]/descendant::div[2]/following-sibling::div[1]")
+$x("//div[@id='reg_form_box']/child::div[1]/descendant::div[2]/following-sibling::div[1]/descendant::div[1]")
+Mobile-$x("//div[@id='reg_form_box']/child::div[2]/descendant::div[1]")

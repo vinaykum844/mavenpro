@@ -1,0 +1,28 @@
+HTML tag
+<a title="Selenium Projects" href="/projects/">Projects</a>
+Xpath
+//tagName[@attribute='attributevalue']
+//a[@title='Selenium Projects']
+//a[@href='/projects/']
+//a[contains(text(),'Projects')]
+
+CSS
+tagName[attribute='attributevalue']
+a[title='Selenium Projects']
+a[href='/projects/']
+
+
+<li id="menu_documentation">
+<a title="Technical references and guides" href="/docs/">Documentation</a>
+
+Xpath
+//li[@id='menu_documentation']/a
+//a[@title='Technical references and guides']
+//a[@href='/docs/']
+//a[contains(text(),'Documentation')]
+
+CSS
+li[id='menu_documentation']>a
+a[title='Technical references and guides']
+a[href='/docs/']
+
